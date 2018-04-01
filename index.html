@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<form name="form1" method="post" action="sample.php">
+  <table width="81%" border="0" bgcolor="#CCCCCC">
+    <tr> 
+      <td width="20%"><strong>Dimentions:</strong></td>
+      <td colspan="3"><strong>x:</strong> <select name="x" id="x">
+          <option value="200">200px</option>
+          <option value="400">400px</option>
+          <option value="600" selected>600px</option>
+          <option value="800px">800px</option>
+        </select> <strong>y:</strong> <select name="y" id="y">
+          <option value="200">200px</option>
+          <option value="400">400px</option>
+          <option value="600" selected>600px</option>
+          <option value="800">800px</option>
+        </select></td>
+    </tr>
+    <tr> 
+      <td width="20%"><strong>t Range:</strong></td>
+      <td colspan="3"><strong>start: 
+        <input name="t_start" type="text" id="t_start" value="0" size="5" maxlength="5">
+        end : 
+        <input name="t_end" type="text" id="t_end" value="250" size="5" maxlength="5">
+        </strong></td>
+    </tr>
+    <tr> 
+      <td><strong>Background Color:</strong></td>
+      <td width="29%"><strong>R: </strong> <input name="br" type="text" id="br" value="0" size="5" maxlength="3"></td>
+      <td width="26%"><strong>G: </strong> <input name="bg" type="text" id="bg" value="0" size="5" maxlength="3"></td>
+      <td width="25%"><strong>B: </strong> <input name="bb" type="text" id="bb" value="0" size="5" maxlength="3"> 
+      </td>
+    </tr>
+    <tr> 
+      <td colspan="4">&nbsp;</td>
+    </tr>
+    <tr> 
+      <td rowspan="3"><strong>Equations:</strong></td>
+      <td colspan="3"><strong>x(t) =</strong> <input name="eqx" type="text" id="eqx" value="log(t*t)" size="30" maxlength="30"></td>
+    </tr>
+    <tr> 
+      <td colspan="3"><strong>y(t) = 
+        <input name="eqy" type="text" id="eqy" value="cos(t/10)" size="30" maxlength="30">
+        </strong></td>
+    </tr>
+    <tr> 
+      <td colspan="3"><strong>z(t) = 
+        <input name="eqz" type="text" id="eqz" value="t*4" size="30" maxlength="30">
+        </strong></td>
+    </tr>
+    <tr> 
+      <td> <div align="left"><strong>Calculation Step:</strong></div></td>
+      <td><select name="step" id="step">
+          <option value=".001">.001</option>
+          <option value=".01">.01</option>
+          <option value=".1">.1</option>
+          <option value="1" selected>1</option>
+          <option value="2">2</option>
+          <option value="5">5</option>
+          <option value="7">7</option>
+          <option value="10">10</option>
+          <option value="20">20</option>
+          <option value="100">100</option>
+        </select></td>
+      <td><div align="center"><strong>Show Grid</strong> 
+          <input name="hasgrid" type="checkbox" id="hasgrid2" value="1">
+        </div></td>
+      <td><strong>Render 
+        <input name="render" type="checkbox" id="render" value="1" checked>
+        </strong></td>
+    </tr>
+    <tr> 
+      <td colspan="4"><div align="right"> 
+          <input type="submit" name="Submit" value="Draw" align="right">
+        </div></td>
+    </tr>
+  </table>
+  <p>&nbsp;</p>
+  </form>
+<p>&nbsp;</p></body>
+</html>
