@@ -136,7 +136,7 @@
 			imagestring ($image, 2, 10, $this->dimy-28, "x(t) = ".str_replace('$t','t',$this->function_x), $col1);
 			imagestring ($image, 2, 10, $this->dimy-15, "y(t) = ".str_replace('$t','t',$this->function_y), $col1);
 			imagestring ($image, 2, 10, $this->dimy-3 , "z(t)= ".str_replace('$t','t',$this->function_z), $col1);
-			imagejpeg($image,"",100);
+			imagejpeg($image, null, 100);
 			}	
 		}				
 ?>
